@@ -1,4 +1,4 @@
 # Digital-Clock
 ### Date, SetInterval
 
-![image](Image.png)
+![image](Image.PNG)
