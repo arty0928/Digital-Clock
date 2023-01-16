@@ -1,18 +1,26 @@
+const hour = document.querySelector('.hour'); // '.time hour'-> error
+const min = document.querySelector('.min');   //number of classname => 2
+const sec = document.querySelector('.sec');
 
 
-window.onload = function() {
-    const time = new Date();
-    console.log(time.getHours());
-    console.log(time.getMinutes());
-    console.log(time.getSeconds());
+//// function type
+function clock() {
+    const now = new Date();
 
-    const hour = document.getElementsByClassName('time hour');
-    const min = document.getElementsByClassName('time min');
-    const sec = document.getElementsByClassName('time sec');
-
-    hour.innerHTML = time.getHours();
-    min.innerHTML = time.getMinutes();
-    sec.innerHTML = time.getSeconds();
-
+    hour.innerText = now.getHours();
+    min.innerText = now.getMinutes();
+    sec.innerText = now.getSeconds();
 
 }
+
+setInterval(clock,1000); //1000 msec = 1 sec
+
+
+//// Arrow function
+// setInterval(()=>{
+//     const now = new Date();
+
+//     hour.innerText = now.getHours();
+//     min.innerText = now.getMinutes();
+//     sec.innerText = now.getSeconds();
+// })
