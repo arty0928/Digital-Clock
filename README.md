@@ -1,2 +1,4 @@
 # Digital-Clock
-Date, SetInterval
+### Date, SetInterval
+
+![image](Image.png)
